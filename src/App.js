@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -21,6 +22,18 @@ function App() {
       </header>
     </div>
   );
+=======
+import React from "react";
+import "./App.css";
+import Home from "./components/home";
+
+function App() {
+    return (
+        <div className="App">
+            <Home />
+        </div>
+    );
+>>>>>>> Adding new theme
 }
 
 export default App;
