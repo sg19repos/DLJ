@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/dljewels/static/css/main.2f81e9f0.chunk.css",
+    "main.js": "/dljewels/static/js/main.0b984b5b.chunk.js",
+    "main.js.map": "/dljewels/static/js/main.0b984b5b.chunk.js.map",
+    "runtime-main.js": "/dljewels/static/js/runtime-main.ce8dc788.js",
+    "runtime-main.js.map": "/dljewels/static/js/runtime-main.ce8dc788.js.map",
+    "static/js/2.ec73128e.chunk.js": "/dljewels/static/js/2.ec73128e.chunk.js",
+    "static/js/2.ec73128e.chunk.js.map": "/dljewels/static/js/2.ec73128e.chunk.js.map",
+    "static/js/3.afa9f9a2.chunk.js": "/dljewels/static/js/3.afa9f9a2.chunk.js",
+    "static/js/3.afa9f9a2.chunk.js.map": "/dljewels/static/js/3.afa9f9a2.chunk.js.map",
+    "index.html": "/dljewels/index.html",
+    "precache-manifest.7c5670c1786b8c3897b8e71f15cc96e8.js": "/dljewels/precache-manifest.7c5670c1786b8c3897b8e71f15cc96e8.js",
+    "service-worker.js": "/dljewels/service-worker.js",
+    "static/css/main.2f81e9f0.chunk.css.map": "/dljewels/static/css/main.2f81e9f0.chunk.css.map",
+    "static/media/heart.css": "/dljewels/static/media/heart.45598562.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce8dc788.js",
+    "static/js/2.ec73128e.chunk.js",
+    "static/css/main.2f81e9f0.chunk.css",
+    "static/js/main.0b984b5b.chunk.js"
+  ]
+}
