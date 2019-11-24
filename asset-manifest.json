@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/dljewels/static/css/main.2f81e9f0.chunk.css",
-    "main.js": "/dljewels/static/js/main.0b984b5b.chunk.js",
-    "main.js.map": "/dljewels/static/js/main.0b984b5b.chunk.js.map",
-    "runtime-main.js": "/dljewels/static/js/runtime-main.ce8dc788.js",
-    "runtime-main.js.map": "/dljewels/static/js/runtime-main.ce8dc788.js.map",
-    "static/js/2.ec73128e.chunk.js": "/dljewels/static/js/2.ec73128e.chunk.js",
-    "static/js/2.ec73128e.chunk.js.map": "/dljewels/static/js/2.ec73128e.chunk.js.map",
-    "static/js/3.afa9f9a2.chunk.js": "/dljewels/static/js/3.afa9f9a2.chunk.js",
-    "static/js/3.afa9f9a2.chunk.js.map": "/dljewels/static/js/3.afa9f9a2.chunk.js.map",
-    "index.html": "/dljewels/index.html",
-    "precache-manifest.7c5670c1786b8c3897b8e71f15cc96e8.js": "/dljewels/precache-manifest.7c5670c1786b8c3897b8e71f15cc96e8.js",
-    "service-worker.js": "/dljewels/service-worker.js",
-    "static/css/main.2f81e9f0.chunk.css.map": "/dljewels/static/css/main.2f81e9f0.chunk.css.map",
-    "static/media/heart.css": "/dljewels/static/media/heart.45598562.png"
+    "main.css": "/DLJ/static/css/main.7765c379.chunk.css",
+    "main.js": "/DLJ/static/js/main.a10a2459.chunk.js",
+    "main.js.map": "/DLJ/static/js/main.a10a2459.chunk.js.map",
+    "runtime-main.js": "/DLJ/static/js/runtime-main.18177218.js",
+    "runtime-main.js.map": "/DLJ/static/js/runtime-main.18177218.js.map",
+    "static/js/2.1cd83c77.chunk.js": "/DLJ/static/js/2.1cd83c77.chunk.js",
+    "static/js/2.1cd83c77.chunk.js.map": "/DLJ/static/js/2.1cd83c77.chunk.js.map",
+    "static/js/3.afa9f9a2.chunk.js": "/DLJ/static/js/3.afa9f9a2.chunk.js",
+    "static/js/3.afa9f9a2.chunk.js.map": "/DLJ/static/js/3.afa9f9a2.chunk.js.map",
+    "index.html": "/DLJ/index.html",
+    "precache-manifest.a9371b0288f1b9554b2a8b60223eb79a.js": "/DLJ/precache-manifest.a9371b0288f1b9554b2a8b60223eb79a.js",
+    "service-worker.js": "/DLJ/service-worker.js",
+    "static/css/main.7765c379.chunk.css.map": "/DLJ/static/css/main.7765c379.chunk.css.map",
+    "static/media/heart.css": "/DLJ/static/media/heart.45598562.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce8dc788.js",
-    "static/js/2.ec73128e.chunk.js",
-    "static/css/main.2f81e9f0.chunk.css",
-    "static/js/main.0b984b5b.chunk.js"
+    "static/js/runtime-main.18177218.js",
+    "static/js/2.1cd83c77.chunk.js",
+    "static/css/main.7765c379.chunk.css",
+    "static/js/main.a10a2459.chunk.js"
   ]
 }
