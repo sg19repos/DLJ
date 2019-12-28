@@ -17,7 +17,9 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.secondary,
         height: 60,
         width: 60,
-        borderRadius: "50%"
+        borderRadius: "50%",
+        borderBottom: "2px solid #fc3",
+        marginBottom: "3%"
     },
     gridItem1: {
         margin: "2% 4%"
@@ -27,11 +29,13 @@ const useStyles = makeStyles(theme => ({
     },
     itemname: {
         textAlign: "right",
-        color: "#555"
+        color: "#555",
+        fontFamily: "Cinzel"
     },
     itemname2: {
         textAlign: "center",
-        color: "#555"
+        color: "#555",
+        fontFamily: "Cinzel"
     },
     paper2: {
         padding: theme.spacing(2),
@@ -40,7 +44,9 @@ const useStyles = makeStyles(theme => ({
         height: 60,
         width: 60,
         borderRadius: "50%",
-        margin: "auto"
+        margin: "auto",
+        borderBottom: "2px solid #fc3",
+        marginBottom: "3%"
     },
     gridRoot2: {
         margin: "auto 10%"

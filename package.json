@@ -6,6 +6,7 @@
         "@babel/runtime": "^7.6.3",
         "@material-ui/core": "^4.7.0",
         "@material-ui/icons": "^4.5.1",
+        "axios": "^0.19.0",
         "material-ui": "^1.0.0-beta.47",
         "react": "^16.11.0",
         "react-dom": "^16.11.0",
@@ -17,7 +18,10 @@
         "react-share": "^3.0.1",
         "styled-components": "^4.4.0"
     },
+    "homepage": "https://sg19repos.github.io/DLJ",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -37,5 +41,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "gh-pages": "^2.1.1"
     }
 }

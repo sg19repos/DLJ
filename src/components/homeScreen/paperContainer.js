@@ -5,7 +5,9 @@ import ImageGrid from "./imageGrid";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        padding: theme.spacing(3, 2)
+        padding: theme.spacing(3, 2),
+        borderBottom: "4px solid #fc3",
+        marginBottom: "6%"
     }
 }));
 

@@ -4,7 +4,7 @@ import Favorites from "../favorites";
 import HomeScreen from "../homeScreen";
 import Screen4 from "../screen4";
 import Screen5 from "../screen5";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Categories from "../categoryPages";
 import ItemDetailView from "../common/itemDetailView";
 import ContentStyles from "../styles/contentStyles";
@@ -40,6 +40,9 @@ const Content = () => {
                     <Route path="/categories/" component={Categories} />
                     <Route path="/itemDetails">
                         <ItemDetailView />
+                    </Route>
+                    <Route path="/">
+                        <Redirect to="/home" />
                     </Route>
                 </Switch>
             </ContentStyles>

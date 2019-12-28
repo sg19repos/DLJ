@@ -12,6 +12,12 @@ function Header() {
 
     const getHeaderTitle = () => {
         switch (history.location.pathname) {
+            case "/":
+                return (
+                    <HeaderStyles>
+                        <h5>DL Jewels</h5>
+                    </HeaderStyles>
+                );
             case "/home":
                 return (
                     <HeaderStyles>
