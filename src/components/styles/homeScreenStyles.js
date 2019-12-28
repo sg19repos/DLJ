@@ -5,8 +5,8 @@ const HomeScreenStyles = styled.div`
     margin-bottom: 20%;
     .homeScreenPapers {
         margin-top: auto;
-    }
-    .MuiPaper-root {
+        border-bottom: "4px solid #fc3";
+        margin-bottom: "6%";
     }
 `;
 

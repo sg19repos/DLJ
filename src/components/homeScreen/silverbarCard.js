@@ -3,14 +3,18 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import GridImage from "./image";
 import CategoriesButtons from "./openCategoriesButton";
+import ItemTitle from "./itemTitle";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        padding: theme.spacing(1, 2, 2, 2)
+        padding: theme.spacing(1, 2, 2, 2),
+        borderBottom: "4px solid #fc3",
+        marginBottom: "6%"
     },
     paragraph: {
         textAlign: "left",
-        borderBottom: "1px dotted #ddd"
+        borderBottom: "1px dotted #ddd",
+        fontFamily: "Cinzel"
     }
 }));
 
@@ -24,12 +28,13 @@ export default function SilverbarCard() {
     return (
         <div>
             <Paper className={classes.root}>
-                <p className={classes.paragraph}>Silver coins & Bars</p>
+                {/* <p className={classes.paragraph}>Silver coins & Bars</p> */}
                 <GridImage src={silverBar2} />
                 <GridImage src={silverCoin2} />
                 <GridImage src={silverBar1} />
                 <GridImage src={silverCoin1} />
-                <CategoriesButtons />
+                {/* <CategoriesButtons /> */}
+                <ItemTitle titleText="Silver coins & Bars" />
             </Paper>
         </div>
     );

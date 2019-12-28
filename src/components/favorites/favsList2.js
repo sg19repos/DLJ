@@ -18,6 +18,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
+import axios from "axios";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -26,13 +27,21 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: "#f9f9f9",
         margin: "1%"
     },
+    // bottomAction: {
+    //     backgroundColor: "#fc3"
+    // },
     divider: {
         border: `1px solid ${theme.palette.divider}`,
+        backgroundColor: "#fc3",
         height: "30px"
     },
     cartItemName: {
         "& .MuiTypography-body1": {
             fontFamily: "Cabin !important"
+        },
+        "& h3": {
+            fontFamily: "calibri !important",
+            margin: "1px auto !important"
         }
     },
     deleteCartItem: {
@@ -77,6 +86,23 @@ export default function FavsList2({
         setOpen(false);
     };
 
+    const sendThisOnWA = () => {
+        // https://wa.me/?text=I'm%20inquiring%20about%20the%20apartment%20listing
+        //         POST https://eu2.chat-api.com/instance88885/sendMessage?token=6bxwarrg3zfq3smu
+        // JSON body:
+        // {
+        //   "phone": "919885761260",
+        //   "body": "WhatsApp API on chat-api.com works good again"
+        // }
+        //     };
+        const apiUrl =
+            "https://eu2.chat-api.com/instance88885/sendMessage?token=6bxwarrg3zfq3smu";
+        const response = axios.post(apiUrl, {
+            phone: "919885761260",
+            body: "https://sg19repos.github.io/DLJ/" + window.location.pathname
+        });
+    };
+
     return (
         <Fragment>
             <List className={classes.root}>
@@ -105,15 +131,19 @@ export default function FavsList2({
                                     display="block"
                                     gutterBottom
                                 >
-                                    Click SAVE to get confirmation OTP. We will
-                                    never spam you
+                                    <h3>Item Material & description</h3>
+                                    <h3>₹400</h3>
                                 </Typography>
                             </React.Fragment>
                         }
                     />
                 </ListItem>
             </List>
-            <Grid container alignItems="center" className={classes.root}>
+            <Grid
+                container
+                alignItems="center"
+                className={(classes.root, classes.bottomAction)}
+            >
                 <Dialog
                     open={open}
                     onClose={handleClose}
@@ -127,7 +157,7 @@ export default function FavsList2({
                     </DialogTitle> */}
                     <DialogContent>
                         <DialogContentText>
-                            Sure you want to remove this item from cart?
+                            Sure you want to remove this from cart?
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
@@ -170,8 +200,10 @@ export default function FavsList2({
                             fontFamily: "Lato",
                             textTransform: "capitalize"
                         }}
+                        onClick={sendThisOnWA}
                     >
                         Proceed
+                        {/* <a href="https://wa.me/919885761260?text=">Proceed</a> */}
                     </Button>
                 </div>
             </Grid>

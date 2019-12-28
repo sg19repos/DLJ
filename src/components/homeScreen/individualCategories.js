@@ -3,14 +3,18 @@ import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import GridImage from "./image";
 import CategoriesButtons from "./openCategoriesButton";
+import ItemTitle from "./itemTitle";
 
 const useStyles = makeStyles(theme => ({
     root: {
-        padding: theme.spacing(1, 2, 2, 2)
+        padding: theme.spacing(1, 2, 2, 2),
+        borderBottom: "4px solid #fc3",
+        marginBottom: "6%"
     },
     paragraph: {
         textAlign: "left",
-        borderBottom: "1px dotted #ddd"
+        borderBottom: "1px dotted #ddd",
+        fontFamily: "Cinzel"
     }
 }));
 
@@ -25,13 +29,13 @@ export default function IndividualCategories() {
     return (
         <div>
             <Paper className={classes.root}>
-                <p className={classes.paragraph}>Jewellery set</p>
+                {/* <p className={classes.paragraph}>Jewellery set</p> */}
                 <GridImage src={jewellerySetImage1} alt="jewellery_set" />
                 <GridImage src={jewellerySetImage7} alt="jewellery_set" />
                 <GridImage src={jewellerySetImage4} alt="jewellery_set" />
                 <GridImage src={jewellerySetImage5} alt="jewellery_set" />
                 <GridImage src={jewellerySetImage6} alt="jewellery_set" />
-                <CategoriesButtons />
+                <ItemTitle titleText="Jewellery Set" />
             </Paper>
         </div>
     );

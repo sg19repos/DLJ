@@ -34,7 +34,9 @@ const useStyles = makeStyles(theme => ({
         color: "#999"
     },
     catImage: {
-        width: "100%"
+        width: "65%",
+
+        left: "35% !important"
     }
 }));
 
@@ -59,13 +61,21 @@ export default function TitlebarGridList({ gallerySelection }) {
                             padding: "0px",
                             margin: "1%",
                             width: "48%",
-                            backgroundColor: "#f2f2f2"
+                            color: "#f2f2f2"
                         }}
                     >
                         <GridListTile
                             key={tile.img}
                             id={tile.modelNo}
-                            style={{ height: "-webkit-fill-available" }}
+                            style={{
+                                height: "-webkit-fill-available",
+                                border: "1px solid #fc3",
+                                borderTop: "none",
+                                borderLeft: "none",
+                                padding: "10%",
+                                boxShadow:
+                                    "0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)"
+                            }}
                             onClick={() =>
                                 history.push({
                                     pathname: "/itemDetails",
@@ -85,12 +95,38 @@ export default function TitlebarGridList({ gallerySelection }) {
                                 className={classes.favIcon}
                             />
 
-                            <GridListTileBar
+                            {/* <GridListTileBar
                                 style={{
-                                    height: "20%"
+                                    height: "20%",
+                                    color: "#fc3",
+                                    fontFamily: "calibri"
                                 }}
                                 title={tile.title}
-                            />
+                            /> */}
+                            <h5
+                                style={{
+                                    color: "#999",
+                                    fontFamily: "calibri",
+                                    margin: "1% auto",
+                                    position: "absolute",
+                                    top: "65%",
+                                    left: "35%"
+                                }}
+                            >
+                                {tile.title}
+                            </h5>
+                            <h3
+                                style={{
+                                    color: "#555",
+                                    fontFamily: "calibri",
+                                    margin: "2% auto",
+                                    position: "absolute",
+                                    top: "80%",
+                                    left: "35%"
+                                }}
+                            >
+                                ₹400
+                            </h3>
                         </GridListTile>
                     </Link>
                 ))}

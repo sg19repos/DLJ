@@ -2,7 +2,8 @@ import React, { Fragment } from "react";
 import PaperContainer from "./paperContainer";
 import HomeScreenStyles from "../styles/homeScreenStyles";
 import IndividualCategories from "./individualCategories";
-import WeddingCollectionsCard from "./weddingCollectionsCard";
+// import WeddingCollectionsCard from "./weddingCollectionsCard";
+import WeddingCollectionsCard2 from "./weddingCollectionsCard2";
 import SilverbarCard from "./silverbarCard";
 import SeeAllCollections from "./seeAllCollection";
 
@@ -18,7 +19,7 @@ const HomeScreen = () => {
                         <IndividualCategories />
                     </div>
                     <div className="homeScreenPapers">
-                        <WeddingCollectionsCard />
+                        <WeddingCollectionsCard2 />
                     </div>
                     <div className="homeScreenPapers">
                         <SilverbarCard />
